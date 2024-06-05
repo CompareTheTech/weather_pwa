@@ -1,0 +1,67 @@
+.wrapper {
+  display: grid;
+  height: 90%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  padding: 20px;
+  margin-top: 15px;
+  align-content: flex-start;
+}
+
+.header {
+  display: flex;
+}
+
+.searchContainer {
+  display: flex;
+  flex: 1;
+  border: 1px solid #000000;
+  border-radius: 50px;
+}
+
+.search {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  flex: 1;
+}
+
+.searchIcon {
+  transform: scale(0.5);
+}
+
+.crossIcon {
+  display: flex;
+  align-items: center;
+  transform: scale(0.6);
+  padding: 0 10px;
+}
+
+.cancelButton {
+  padding: 10px;
+}
+
+.city {
+  display: flex;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cityName {
+  font-weight: bold;
+}
+
+.noResult {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

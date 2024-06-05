@@ -1,0 +1,82 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchIconText {
+  font-size: 20px;
+}
+
+.menuIcon {
+  padding: 10px;
+}
+
+.location {
+  padding-left: 10px;
+}
+
+.city {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.region {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #9a938c;
+}
+
+.searchIcon {
+  margin-left: 20px;
+}
+
+.weather {
+  display: flex;
+  flex: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.weatherIcon {
+  width: 60%;
+}
+
+.temperatureWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.temperature {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.temperatureText {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.temperatureUnit {
+  font-size: 16px;
+  color: #313341;
+}
+
+.condition {
+  flex: 1;
+  text-align: center;
+}

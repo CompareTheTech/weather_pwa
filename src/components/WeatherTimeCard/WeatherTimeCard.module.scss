@@ -1,0 +1,18 @@
+.container {
+  flex: 1;
+  align-items: center;
+  background-color: rgba(256, 256, 256, 0.3);
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+
+.activeContainer {
+  background-color: rgba(256, 256, 256, 0.6);
+}
+
+.icon {
+  flex: 1;
+  margin: 5px 0;
+  width: 30px;
+  height: 30px;
+}

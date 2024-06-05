@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  padding: 0 15px;
+  gap: 35px;
+  height: 64px;
+  align-items: center;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 1);
+  position: sticky;
+  top: 0;
+  background-color: rgb(254, 227, 188);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}

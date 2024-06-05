@@ -1,0 +1,29 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(315deg, #f39876, #fee3bc, #fee3bc);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bold {
+  font-weight: bold;
+}
