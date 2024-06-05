@@ -8,7 +8,7 @@ import { observer } from 'mobx-react';
 import WeatherIndicatorCard from '@/components/WeatherIndicator/WeatherIndicatorCard/WeatherIndicatorCard.tsx';
 import styles from './WeatherIndicatorList.module.scss';
 import { FC } from 'react';
-import { useStore } from "@/store";
+import { useStore } from '@/store';
 
 interface WeatherListProps {
   weather: WeatherData;

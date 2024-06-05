@@ -1,8 +1,8 @@
 import { makeAutoObservable } from 'mobx';
 import { WeatherData } from '@/interfaces/weatherData';
 import { makePersistable } from 'mobx-persist-store';
-import { CurrentLocationData } from "@/interfaces/currentLocationData.ts";
-import { CityLocationData } from "@/interfaces/cityLocationData.ts";
+import { CurrentLocationData } from '@/interfaces/currentLocationData.ts';
+import { CityLocationData } from '@/interfaces/cityLocationData.ts';
 
 class ActiveCityStore {
   currentLocation: CurrentLocationData | CityLocationData | null = null;

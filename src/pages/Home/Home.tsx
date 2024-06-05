@@ -1,24 +1,25 @@
 import { Link } from 'react-router-dom';
 import styles from './Home.module.scss';
-import SearchIcon from "@/components/icons/SearchIcon.tsx";
-import MenuIcon from "@/components/icons/MenuIcon.tsx";
-import { getWeather } from "@/api/getWeather.ts";
-import { getCurrentLocation } from "@/api/getCurrentLocation.ts";
-import { useEffect } from "react";
-import { useStore } from "@/store";
-import Loader from "@/components/Loader/Loader.tsx";
-import { format } from "date-fns";
+import SearchIcon from '@/components/icons/SearchIcon.tsx';
+import MenuIcon from '@/components/icons/MenuIcon.tsx';
+import { getWeather } from '@/api/getWeather.ts';
+import { getCurrentLocation } from '@/api/getCurrentLocation.ts';
+import { useEffect } from 'react';
+import { useStore } from '@/store';
+import Loader from '@/components/Loader/Loader.tsx';
+import { format } from 'date-fns';
 import { countries } from 'country-data';
-import { transformTemperatureByUnit } from "@/utils/transformTemperatureByUnit.ts";
-import WeatherIcon from "@/components/WeatherIcon.tsx";
-import WeatherIndicatorList from "@/components/WeatherIndicator/WeatherIndicatorList/WeatherIndicatorList.tsx";
-import BottomMenu from "@/components/BottomMenu/BottomMenu.tsx";
+import { transformTemperatureByUnit } from '@/utils/transformTemperatureByUnit.ts';
+import WeatherIcon from '@/components/WeatherIcon.tsx';
+import WeatherIndicatorList from '@/components/WeatherIndicator/WeatherIndicatorList/WeatherIndicatorList.tsx';
+import BottomMenu from '@/components/BottomMenu/BottomMenu.tsx';
+import { observer } from 'mobx-react';
 
-export const HomePage = () => {
+const HomePage = observer(() => {
   const { activeCity, settingsStore } = useStore();
 
   useEffect(() => {
-    let weatherPromise: Promise<any>
+    let weatherPromise: Promise<any>;
     if (!activeCity.currentLocation) {
       weatherPromise = getCurrentLocation().then((location) => {
         activeCity.setCurrentLocation(location);
@@ -83,4 +84,6 @@ export const HomePage = () => {
       <BottomMenu />
     </div>
   );
-};
+});
+
+export default HomePage;

@@ -4,7 +4,7 @@ import { transformTemperatureByUnit } from '@/utils/transformTemperatureByUnit';
 import { observer } from 'mobx-react';
 import { useStore } from '@/store';
 import { TemperatureUnitEnum } from '@/enum/temperatureUnit.enum';
-import styles from './WeatherTimeCard.module.scss'
+import styles from './WeatherTimeCard.module.scss';
 import cx from 'classnames';
 
 export interface WeatherTimeCardProps {
