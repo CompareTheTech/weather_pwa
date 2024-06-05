@@ -21,6 +21,7 @@ const SettingsPage = observer(() => {
               <div>Temperature units</div>
               <Select
                 defaultValue={settingsStore.temperatureUnit}
+                onChange={(value) => settingsStore.setTemperatureUnit(value)}
                 style={{ width: 120 }}
                 options={[
                   { value: TemperatureUnitEnum.Celsius, label: TemperatureUnitEnum.Celsius },
@@ -32,6 +33,7 @@ const SettingsPage = observer(() => {
               <div>Wind speed units</div>
               <Select
                 defaultValue={settingsStore.windSpeedUnit}
+                onChange={(value) => settingsStore.setWindSpeedUnit(value)}
                 style={{ width: 120 }}
                 options={[
                   {
@@ -49,7 +51,8 @@ const SettingsPage = observer(() => {
             <div className={styles.blockItem}>
               <div>Atmospheric pressure units</div>
               <Select
-                defaultValue={settingsStore.windSpeedUnit}
+                defaultValue={settingsStore.atmosphericPressureUnit}
+                onChange={(value) => settingsStore.setAtmosphericPressureUnit(value)}
                 style={{ width: 120 }}
                 options={[
                   {
